@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLEE TRAVEL AGENCY</title>
+    <link href="./style.css" rel="stylesheet" />
+    <style>
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            margin: auto;
+            max-width: 1600px;
+        }
+        
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            background: url(hotel.jpg);
+            color: white;
+        }
+        
+        h1 {
+            color: white;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: rgba(26, 26, 241, 1);
+            justify-content: space-between;
+        }
+        
+        .navbar ul {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .navbar ul li {
+            display: flex;
+            list-style: none;
+        }
+        
+        .navbar ul li a {
+            position: relative;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 2px;
+            font-weight: 500px;
+            transition: 0.5s;
+        }
+        
+        .bookings {
+            margin-top: 100px;
+            width: 700px;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(26, 76, 241, 0.95);
+        }
+        
+        .bookings h1 {
+            margin-left: 30%;
+        }
+        
+        input {
+            width: 200px;
+            height: 30px;
+            border: none;
+            color: #fff;
+            border-radius: 3px;
+        }
+        
+        .form {
+            align-items: center;
+            margin: 50px;
+        }
+        
+        .events {
+            background: rgba(215, 221, 240, 0.35);
+        }
+        
+        table {
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid #fff;
+            width: 900px;
+            color: #fff;
+            background-color: rgba(16, 222, 236, 0.4);
+        }
+        
+        .btn {
+            color: blue;
+            border: #fff;
+            width: 120px;
+            height: 40px;
+            margin: 20px;
+            font: 600;
+            border-radius: 20px;
+        }
+        
+        td {
+            font-size: larger;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        }
+        
+        .footer {
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 50%;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./logo.png" alt="" srcset="" width="100" height="100" />
+            <li><a href="#">BLEE TRAVEL AGENCY</a></li>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="bookings">
+            <h1>Book a Destination</h1>
+            <div class="form">
+                <div class="f1">
+                    <h2>Name:</h2>
+                    <input class="i2" type="text" placeholder="first names" />
+                    <input class="i2" type="text" placeholder="last names" />
+                </div>
+                <div class="f1">
+                    <h2>Email:</h2>
+                    <input class="i2" type="email" name=" email" id="" placeholder="email" />
+                </div>
+                <div class="f1">
+                    <h2>Phone:</h2>
+                    <input type="number" name="phone- number" id="" class="i2" placeholder="phone-number" />
+                </div>
+                <div class="f1">
+                    <h2>Date:</h2>
+                    <input type="date" class="i2" name="date" id="" />
+                </div>
+                <div>
+                    <input type="button" class="btn" value="Submit" />
+                </div>
+            </div>
+        </div>
+        <div class="events">
+            <h1>Our Tours</h1>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Location</th>
+                    <th>Time</th>
+                    <th>Dates</th>
+                    <th>Price</th>
+                    <th>Book</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lake Naivasha</td>
+                    <td>2 days</td>
+                    <td>1th March 2023</td>
+                    <td>10000</td>
+                    <td><input class="btn" type="button" value="Book" /></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Malindi</td>
+                    <td>1 week</td>
+                    <td>3th March 2023</td>
+                    <td>28000</td>
+                    <td><input class="btn" type="button" value="Book" /></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Diani Beach</td>
+                    <td>6 days</td>
+                    <td>10th March 2023</td>
+                    <td>18000</td>
+                    <td><input class="btn" type="button" value="Book" /></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mount Kenya</td>
+                    <td>4 days</td>
+                    <td>18th March 2023</td>
+                    <td>8000</td>
+                    <td><input class="btn" type="button" value="Book" /></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Lake Baringo</td>
+                    <td>2 days</td>
+                    <td>24th March 2023</td>
+                    <td>15000</td>
+                    <td><input class="btn" type="button" value="Book" /></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <h6>Copyright@2023</h6>
+        </div>
+    </div>
+</body>
+
+</html>
